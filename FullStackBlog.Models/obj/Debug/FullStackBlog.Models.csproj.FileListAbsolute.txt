@@ -11,3 +11,17 @@ C:\Users\Haris\Documents\Visual Studio 2013\Projects\FullStackBlog\FullStackBlog
 C:\Users\Haris\Documents\Visual Studio 2013\Projects\FullStackBlog\FullStackBlog.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Haris\Documents\Visual Studio 2013\Projects\FullStackBlog\FullStackBlog.Models\obj\Debug\FullStackBlog.Models.dll
 C:\Users\Haris\Documents\Visual Studio 2013\Projects\FullStackBlog\FullStackBlog.Models\obj\Debug\FullStackBlog.Models.pdb
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\FullStackBlog.Models.dll.config
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\FullStackBlog.Models.dll
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\FullStackBlog.Models.pdb
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\EntityFramework.dll
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\EntityFramework.xml
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\obj\Debug\FullStackBlog.Models.dll
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\obj\Debug\FullStackBlog.Models.pdb
+C:\Users\Haris\Documents\Github\FullStack-Blog\FullStackBlog.Models\obj\Debug\FullStackBlog.Models.csprojResolveAssemblyReference.cache

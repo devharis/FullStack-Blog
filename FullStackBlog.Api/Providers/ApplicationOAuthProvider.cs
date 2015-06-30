@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using FullStackBlog.Api.Models;
+using Newtonsoft.Json;
 
 namespace FullStackBlog.Api.Providers
 {
@@ -45,7 +46,7 @@ namespace FullStackBlog.Api.Providers
             ClaimsIdentity cookiesIdentity = await user.GenerateUserIdentityAsync(userManager,
                 CookieAuthenticationDefaults.AuthenticationType);
 
-            AuthenticationProperties properties = CreateProperties(user.UserName);
+            AuthenticationProperties properties = CreateProperties(user.UserName, userManager.GetRoles(user.Id));
             AuthenticationTicket ticket = new AuthenticationTicket(oAuthIdentity, properties);
             context.Validated(ticket);
             context.Request.Context.Authentication.SignIn(cookiesIdentity);
@@ -87,11 +88,12 @@ namespace FullStackBlog.Api.Providers
             return Task.FromResult<object>(null);
         }
 
-        public static AuthenticationProperties CreateProperties(string userName)
+        public static AuthenticationProperties CreateProperties(string userName, IList<string> roles)
         {
             IDictionary<string, string> data = new Dictionary<string, string>
             {
-                { "userName", userName }
+                { "userName", userName },
+                { "userRoles", JsonConvert.SerializeObject(roles)}
             };
             return new AuthenticationProperties(data);
         }

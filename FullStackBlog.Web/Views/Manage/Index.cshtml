@@ -81,4 +81,16 @@
                 }*@
         </dd>
     </dl>
+    
+    <h4>Lazy manage roles</h4>
+    @using (Html.BeginForm("AddRole", "Manage", new { userRole = "Admin", FormMethod.Post }))
+    {
+        @Html.AntiForgeryToken()
+        <input type="submit" value="Add Admin" class="btn btn-default" />
+    }
+    @using (Html.BeginForm("AddRole", "Manage", new { userRole = "Guest", FormMethod.Post }))
+    {
+        @Html.AntiForgeryToken()
+        <input type="submit" value="Add Guest" class="btn btn-default" />
+    }
 </div>

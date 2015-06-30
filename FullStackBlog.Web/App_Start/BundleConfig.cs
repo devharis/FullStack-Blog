@@ -31,7 +31,8 @@ namespace FullStackBlog.Web
                 "~/Scripts/angularjs/angular-resource.js",
                 "~/Scripts/angularjs/angular-route.js",
                 "~/Scripts/angularjs/angular-local-storage.js",
-                "~/Scripts/angularjs/angular-mocks.js"));
+                "~/Scripts/angularjs/angular-mocks.js",
+                "~/Scripts/angularjs/lib/angular-ui/ui-bootstrap-tpls-0.13.0.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
@@ -42,8 +43,8 @@ namespace FullStackBlog.Web
                 "~/Scripts/app/config.js",
                 "~/Scripts/app/authentication/controllers/LoginCtrl.js",
                 "~/Scripts/app/authentication/services/AuthService.js",
-                "~/Scripts/app/authentication/services/models/User.js",
                 "~/Scripts/app/authentication/services/models/Session.js",
+                "~/Scripts/app/authentication/directives/login.js",
                 "~/Scripts/app/constants/auth-events.js",
                 "~/Scripts/app/constants/user-roles.js"));
 

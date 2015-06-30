@@ -3,7 +3,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using FullStackBlog.Models;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using FullStackBlog.Web.Models;
@@ -73,6 +75,25 @@ namespace FullStackBlog.Web.Controllers
                 BrowserRemembered = await AuthenticationManager.TwoFactorBrowserRememberedAsync(userId)
             };
             return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> AddRole(string userRole)
+        {
+            if (ModelState.IsValid) 
+                await UserManager.AddToRoleAsync(User.Identity.GetUserId(), userRole);
+
+            return RedirectToAction("Index");
+        }
+
+        // Lazy add
+        private void PopulateRoles()
+        {
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+            roleManager.Create(new IdentityRole("Admin"));
+            roleManager.Create(new IdentityRole("Editor"));
+            roleManager.Create(new IdentityRole("Guest"));
         }
 
         //

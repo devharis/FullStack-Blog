@@ -190,10 +190,10 @@
     <Content Include="Scripts\angularjs\angular.min.js" />
     <Content Include="Scripts\app\authentication\app.js" />
     <Content Include="Scripts\app\authentication\controllers\LoginCtrl.js" />
+    <Content Include="Scripts\app\authentication\directives\login.js" />
     <Content Include="Scripts\app\authentication\partials\login.html" />
     <Content Include="Scripts\app\authentication\services\AuthService.js" />
     <Content Include="Scripts\app\authentication\services\models\Session.js" />
-    <Content Include="Scripts\app\authentication\services\models\User.js" />
     <Content Include="Scripts\app\blog\app.js" />
     <Content Include="Scripts\app\blog\controllers\EditCtrl.js" />
     <Content Include="Scripts\app\blog\controllers\ListCtrl.js" />
@@ -201,6 +201,8 @@
     <Content Include="Scripts\app\config.js" />
     <Content Include="Scripts\app\constants\auth-events.js" />
     <Content Include="Scripts\app\constants\user-roles.js" />
+    <Content Include="Scripts\app\lib\angular-ui\ui-bootstrap-tpls-0.13.0.js" />
+    <Content Include="Scripts\app\lib\angular-ui\ui-bootstrap-tpls-0.13.0.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angularjs\angular.min.js.map" />
@@ -252,6 +254,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -259,7 +262,6 @@
     <Folder Include="Scripts\app\blog\filters\" />
     <Folder Include="Scripts\app\blog\partials\" />
     <Folder Include="Scripts\app\blog\services\models\" />
-    <Folder Include="Scripts\app\lib\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

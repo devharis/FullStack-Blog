@@ -8,6 +8,14 @@ namespace FullStackBlog.Web.Controllers
 {
     public class HomeController : Controller
     {
+        // GET: Login
+        [HttpGet]
+        public ActionResult Login()
+        {
+
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();
